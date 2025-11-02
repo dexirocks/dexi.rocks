@@ -1,0 +1,44 @@
+/* The actual main stylesheet specifically designed for dexi.rocks homepage */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title {
+    /* Using rem as unit size due to https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size#rems */
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+
+.box div {
+    flex: 1 1 0; /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis#combining_flex-grow_and_flex-basis */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box div > * {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.invis-bullet-point {
+    list-style: none;
+}
+
+@media screen and (width <= 1500px) {
+    .box {
+        flex-direction: column;
+    }
+}
