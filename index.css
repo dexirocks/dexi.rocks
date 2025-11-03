@@ -5,23 +5,32 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100dvh;
+    margin: 3rem;
 }
 
 #title {
     /* Using rem as unit size due to https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size#rems */
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 4rem;
+    width: 80dvw;
+    text-wrap: balance;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .box {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 80dvw;
 }
 
 .box div {
     flex: 1 1 0; /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis#combining_flex-grow_and_flex-basis */
+    margin: 0;
+    padding: 0;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -38,6 +47,9 @@ body {
 }
 
 @media screen and (width <= 1500px) {
+    body {
+        justify-content: flex-start;
+    }
     .box {
         flex-direction: column;
     }

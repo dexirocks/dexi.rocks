@@ -34,9 +34,10 @@ p, li {
 
 /* https://stackoverflow.com/a/78216563 */
 hr {
+    display: block;
     background-color: #cbcbcb;
     height: 10px;
-    width: 80vw;
+    width: 80dvw;
     border-radius: 50px;
     padding: 0;
     margin: 0;
