@@ -32,6 +32,12 @@ p, li {
     line-height: 2rem;
 }
 
+/* Based on https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4 */
+li > svg {
+    top: 0.2em;
+    position: relative;
+}
+
 /* https://stackoverflow.com/a/78216563 */
 hr {
     display: block;
