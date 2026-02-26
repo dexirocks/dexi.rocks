@@ -47,7 +47,13 @@ body {
     list-style: none;
 }
 
-@media screen and (width <= 1500px) {
+@media screen and (height <= 1000px) {
+    body {
+	justify-content: flex-start;
+    }
+}
+
+@media screen and (width <= 1600px) {
     body {
         justify-content: flex-start;
     }
