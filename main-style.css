@@ -54,8 +54,8 @@ code {
 /* TODO: Add support for multiline code per https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/code#notes */
 
 /* Based on https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4 */
-li > svg {
-    top: 0.2em;
+li > svg, li > object {
+    top: 0.25em;
     position: relative;
 }
 
