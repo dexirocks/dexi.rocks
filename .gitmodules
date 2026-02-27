@@ -1,3 +1,3 @@
 [submodule "dexi-styles"]
 	path = dexi-styles
-	url = git@dexi.github:dexirocks/dexi-styles
+	url = https://github.com/dexirocks/dexi-styles
