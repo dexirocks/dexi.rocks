@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'MuseoModerno';
     src: url('./fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf') format('truetype');
-    font-weight: 700; /* Closest match to Momo Trust Display's thickness, set as default */
+    font-weight: 750; /* Closest match to Momo Trust Display's thickness, set as default */
 }
 
 @font-face {
