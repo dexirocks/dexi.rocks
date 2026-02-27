@@ -9,7 +9,7 @@ body {
     margin: 3rem;
 }
 
-#title {
+#title { /* ONLY USE TO ACCENTUATE A SINGLE ELEMENT */
     /* Using rem as unit size due to https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size#rems */
     font-size: 2rem;
     line-height: 4rem;
