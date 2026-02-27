@@ -1,16 +1,37 @@
 /* The universal stylesheet used for style consistency throughout all websites hosted under dexi.rocks domain */
 
-/* Using locally served Momo Trust Display and Momo Trust Sans directly acquired from Google Fonts */
+/* Using locally served fonts directly acquired from Google */
+/* Potentially consider Chiron GoRound TC (no simplified) as the body font if Chinese ever gets used */
+/* Custom CI worker needed to dynamically create a subset of Chinese fonts that only appear in the content */
+/* Consider adapting an existing script and add a HTML checker to selectively choose Chinese characters based on context e.g. heading? */
+
+/* Display font exclusively used for a *single element in the page only, e.g. article title */
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url('./fonts/MuseoModerno/MuseoModerno-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700; /* Closest match to Momo Trust Display's thickness, set as default */
+}
+
+@font-face {
+    font-family: 'MuseoModerno';
+    src: url('./fonts/MuseoModerno/MuseoModerno-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700; /* Closest match to Momo Trust Display's thickness, set as default */
+    font-style: italic;
+}
+
+/* Normal heading fonts */
 @font-face {
     font-family: 'Momo Trust Display';
     src: url('./fonts/Momo_Trust_Display/MomoTrustDisplay-Regular.ttf') format('truetype');
 }
 
+/* Default font */
 @font-face {
     font-family: 'Momo Trust Sans';
     src: url('./fonts/Momo_Trust_Sans/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
 }
 
+/* Monospace font for codebase */
 @font-face {
     font-family: 'Sometype Mono';
     src: url('./fonts/Sometype_Mono/SometypeMono-VariableFont_wght.ttf') format('truetype');
@@ -49,6 +70,12 @@ code {
     padding: 5px;
     border: 2px inset #2c2c2c;
     background-color: #222222;
+}
+
+/* You MUST set #title to a div element, period */
+/* ONLY USE TO ACCENTUATE A SINGLE ELEMENT */
+#title > * { /* Only used to set the font family for title, SET UP THE OTHER RULES ON SITE-SPECIFIC CSS FILES */
+    font-family: 'MuseoModerno';
 }
 
 /* TODO: Add support for multiline code per https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/code#notes */
