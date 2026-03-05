@@ -1,3 +1,3 @@
-[submodule "dexi-styles"]
-	path = dexi-styles
-	url = https://github.com/dexirocks/dexi-styles
+[submodule "site-style"]
+	path = site-style
+	url = https://codeberg.org/dexi/site-style.git
