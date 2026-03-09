@@ -1,5 +1,10 @@
 /* The actual main stylesheet specifically designed for dexi.rocks homepage */
 
+/* Just found out I could just import CSS files here */
+/* Credits to https://www.reddit.com/r/webdev/comments/1bqymin/comment/kx5xbvg/ for suggesting sindresorhus/modern-normalize */
+@import 'site-style/modern-normalize.min.css';
+@import 'site-style/main-style.css';
+
 body {
     display: flex;
     flex-direction: column;
